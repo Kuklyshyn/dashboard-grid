@@ -1,5 +1,3 @@
-// https://nuxt.com/docs/api/configuration/nuxt-config
-// const path = require('path');
 export default defineNuxtConfig({
     components: [
         {
@@ -19,8 +17,8 @@ export default defineNuxtConfig({
         postcss: {
             plugins: {
                 tailwindcss: {},
-                autoprefixer: {},
-            },
+                autoprefixer: {}
+            }
         }
     },
     buildModules: [
