@@ -155,10 +155,3 @@
       </div>      
     </div>
 </template>
-<script>
-export default {
-  setup() {
-    console.log("Sidebar")
-  }
-}
-</script>
