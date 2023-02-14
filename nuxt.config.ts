@@ -1,4 +1,5 @@
 export default defineNuxtConfig({
+    ssr: false,
     components: [
         {
           path: '~/components',
@@ -13,16 +14,11 @@ export default defineNuxtConfig({
     css: [
         '@/assets/css/main.scss',
     ],
-    build: {
-        postcss: {
-            plugins: {
-                tailwindcss: {},
-                autoprefixer: {}
-            }
+    postcss: {
+        plugins: {
+            tailwindcss: {},
+            autoprefixer: {}
         }
-    },
-    buildModules: [
-        '@nuxt/postcss8'
-    ],
+    }
 
 })

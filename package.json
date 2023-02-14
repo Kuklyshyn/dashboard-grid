@@ -5,6 +5,7 @@
     "dev": "nuxt dev",
     "start": "nuxt start",
     "preview": "nuxt preview",
+    "generate": "nuxt generate",
     "postinstall": "nuxt prepare",
     "lint": "eslint ."
   },
