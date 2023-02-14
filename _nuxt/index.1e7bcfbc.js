@@ -1,0 +1,1 @@
+import{a as e,b as o,o as c,e as n}from"./entry.f633205c.js";const s={},t=n("h1",null,"Scenarios",-1),a=[t];function r(_,d){return c(),o("div",null,a)}const l=e(s,[["render",r]]);export{l as default};

@@ -1,0 +1,1 @@
+import{a as e,b as o,o as t,e as n}from"./entry.f633205c.js";const s={},c=n("h1",null,"In-store radio",-1),r=[c];function a(_,d){return t(),o("div",null,r)}const l=e(s,[["render",a]]);export{l as default};

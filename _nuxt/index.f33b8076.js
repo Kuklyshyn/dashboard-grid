@@ -1,0 +1,1 @@
+import{a as e,b as s,o as t,e as c}from"./entry.f633205c.js";const n={},o=c("h1",null,"Digital screens",-1),a=[o];function r(_,i){return t(),s("div",null,a)}const d=e(n,[["render",r]]);export{d as default};
