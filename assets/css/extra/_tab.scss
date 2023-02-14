@@ -1,0 +1,35 @@
+.tab-nav {
+    input {
+        position: absolute;
+        left: -999999px;
+        opacity: 0;
+    }
+
+    label {
+        display: inline-block;
+
+        &:first-of-type {
+            margin-right: 16px;
+        }
+    }
+
+    &-header {
+        margin-bottom: 12px;
+    }
+
+    &-header__item {
+        font-family: 'Inter', sans-serif;
+        font-weight: 500;
+        font-size: 14px;
+        padding: 12px;
+        color: $silver;
+        border-bottom: 2px solid transparent;
+        transition: all 0.2s linear;
+        cursor: pointer;
+
+        &.active {
+            color: $black; 
+            border-bottom: 2px solid $black;
+        }
+    }
+}

@@ -1,0 +1,41 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+@import '@vuepic/vue-datepicker/src/VueDatePicker/style/main.scss';
+
+@import "extra/dashboard";
+@import "extra/layouts";
+@import "extra/tab";
+@import "extra/filter";
+
+@font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight:300;
+    font-display: swap;
+    src: url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
+}
+
+@font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight:400;
+    font-display: swap;
+    src: url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+}
+
+@font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight:500;
+    font-display: swap;
+    src: url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+}
+
+@font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
+}

@@ -1,0 +1,11 @@
+.b-content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.b-page {
+    padding: 0 24px;
+    background-color: $snow;
+    flex: 1;
+}

@@ -1,0 +1,409 @@
+$black: #000000;
+$lightsilver: #F5F5F5;
+$silver: #5C5C5C;
+$white: #FFFFFF;
+$snow: #FCFCFC;
+$blue: #175CD3;
+$orange: #DDA231;
+
+
+.main-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.b-sidebar {
+    display: flex;
+    flex-direction: row;
+
+    &-small {
+        display: flex;
+        align-items: center;
+        flex-direction: column;    
+        width: 68px;
+        height: 100%;
+        background-color: $black;
+        padding: 24px 0;
+    }
+
+    &-small-menu {
+        margin-top: 32px;
+
+        li {
+            margin-bottom: 8px;
+        }
+    }
+
+    &-wide {
+        display: flex;
+        flex-direction: column;  
+        width: 212px;
+        border-right: 1px solid $lightsilver;
+        background-color: $white;
+        padding: 0 8px;
+
+        .b-icon {
+            margin: 10px 12px;
+        }
+
+        &-title {
+            font-family: 'Inter', sans-serif;
+            font-weight: 500;
+            font-size: 10px;
+            text-transform: uppercase;
+            color: $black;
+            letter-spacing: 1px;
+            margin-left: 12px;
+            margin-bottom: 5px;
+        }
+    }
+    &-wide-menu {
+        margin-bottom: 16px;
+
+        li {
+            list-style: none;
+        }
+    }
+
+    &-wide-menu-item {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        
+    }
+
+    &-header {
+        border-bottom: 1px solid $lightsilver;
+        margin: 28px 0 16px 12px;
+        padding-bottom: 16px;
+    }
+
+    &-title {
+        font-family: 'Inter', sans-serif;
+        font-weight: 700;
+        font-size: 20px;
+        color: $black;
+    }
+}
+
+.b-dashboard {
+    &-header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid $lightsilver;
+        padding: 12px 24px;
+    }
+
+    &-header-title {
+        font-family: 'Inter', sans-serif;
+        font-weight: 700;
+        font-size: 18px;
+        color: $black;
+
+        &:first-letter {
+            text-transform: uppercase;
+        }
+    }
+
+    &-header__btn-group {
+        display: flex;
+    }
+
+    &-header__create {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 10px 16px;
+        border-radius: 8px;
+        color: $white;
+        background-color: $black;
+
+        .b-icon {
+            margin-right: 8px;
+        }
+    }
+
+    &-header__export {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 10px 16px;
+        border-radius: 8px;
+        background-color: $lightsilver;
+        margin-right: 4px;
+
+        .b-icon {
+            margin-right: 8px;
+        }
+    }
+
+    &__content {
+        background: $white;
+        border: 1px solid $lightsilver;
+        border-radius: 8px;
+        padding: 16px 24px;
+        margin: 0 24px;
+        flex: 1;
+    }
+
+    &__content-grid {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        max-height: calc(100vh - 210px);
+        margin: 0 -6px;
+        overflow: hidden;
+        overflow-y: auto;
+
+        &.list {
+            flex-direction: column;
+            flex-wrap: nowrap;
+        }
+        
+    }
+
+    &__content-filter {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 28px;
+    }
+
+    &__item {
+        background: $white;
+        border: 1px solid $lightsilver;
+        border-radius: 8px;
+        overflow: hidden;
+        max-width: 333px;
+        margin: 0 6px 12px 6px;
+
+        &.wide {
+            max-width: 100%;
+            min-height: 185px;
+            display: flex;
+            flex-direction: row;
+
+            .b-dashboard__item-info {
+                flex: 1;
+            }
+        }
+    }
+
+    &__item-image {
+        position: relative;
+
+        img {
+            max-height: 188px;
+        }
+    }
+
+    &__item-title {
+        font-family: 'Inter', sans-serif;
+        font-weight: 500;
+        font-size: 12px;
+        color: $black;
+    }
+
+    &__item-text {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        font-family: 'Inter', sans-serif;
+        font-weight: 400;
+        font-size: 12px;
+        margin-bottom: 20px;
+        color: $silver;
+    }
+
+    &__item-title {
+        font-family: 'Inter', sans-serif;
+        font-weight: 500;
+        font-size: 12px;
+        margin-bottom: 2px;
+        color: $black; 
+    }
+
+    &__item-info {
+        padding: 12px;
+    }
+
+    &__item-flags {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 12px;
+
+        li {
+            margin-right: 8px;
+        }
+    }
+
+    &__item-brand {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+
+    &__item-brand-info {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        font-family: 'Inter', sans-serif;
+        font-weight: 500;
+        font-size: 12px;
+        color: $black; 
+    }
+
+    &__item-brand-img {
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        background-color: $lightsilver;
+        margin-right: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__item-brand-btn {
+        font-family: 'Inter', sans-serif;
+        font-weight: 500;
+        font-size: 12px;
+        color: $black; 
+        padding: 8px;
+        border: 1px solid $lightsilver;
+        border-radius: 8px;
+    }
+
+    &__item-status {
+        position: absolute;
+        top: 12px;
+        left: 12px;
+
+        &:hover .b-dashboard__item-status-list {
+            opacity: 1;
+        }
+    }
+
+    &__item-status-box {
+        display: flex;
+        flex-direction: row;
+        font-family: 'Inter', sans-serif;
+        font-weight: 400;
+        font-size: 12px;
+        border-radius: 8px;
+        padding: 5px 12px;
+        background-color: $lightsilver;
+        color: $black; 
+        cursor: pointer;
+
+        img {
+            margin-left: 8px;
+        }
+    }
+
+    &__item-status-current {
+        position: relative;
+        padding-left: 15px;
+
+        &::before {
+            position: absolute;
+            top: 6px;
+            left: 0px;
+            content: "";
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background-color: $blue;
+        }
+
+        &.active {
+            &::before {
+                background-color: $orange;
+            }
+        }
+    }
+
+    &__item-status-list {
+        width: 100%;
+        position: absolute;
+        top: 75%;
+        padding-top: 10px;
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+        background-color: $lightsilver;
+        opacity: 0;
+        transition: all 0.3s linear;
+
+        li {
+            font-family: 'Inter', sans-serif;
+            font-weight: 400;
+            font-size: 11px;
+            padding: 5px 12px;
+            text-align: right;
+            border-top: 1px solid rgba(0,0,0, 0.1);
+            cursor: pointer;
+            color: $black; 
+        }
+    }
+
+    &__item-edit {
+        position: absolute;
+        top: 12px;
+        right: 12px;
+        cursor: pointer;
+    }
+
+    &__item-edit-panel {
+        position: absolute;
+        top: 30px;
+        right: 30px;
+        width: 172px;
+        height: 156px;
+        padding: 0 16px;
+        border-radius: 8px;
+        background-color: $white;
+
+        img {
+            margin-right: 16px;
+        }
+
+        li {
+            display: flex;
+            flex-direction: row;
+            padding: 12px 0;
+        }
+    }
+}
+
+
+.dp__main {
+    .dp__input {
+        border: 1px solid transparent !important;
+        font-family: 'Inter', sans-serif;
+        font-weight: 400;
+        font-size: 12px;
+        color: $black; 
+    }
+
+    .dp__input_icons {
+        padding-left: 0;
+    }
+
+    .dp__input_icon {
+        color: $black; 
+    }
+
+    .dp__input_icon_pad {
+        padding-left: 25px;
+    }
+
+    .dp__clear_icon {
+        opacity: 0;
+    }
+}
